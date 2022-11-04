@@ -212,7 +212,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: "Cascadia Code PL" #"FiraCode NF" "Cascadia Code PL" Monaco  monospace
+    family: "Cascadia Code PL" #"FiraCode Nerd Font" "Cascadia Code PL" Monaco  monospace
 
     # The `style` can be specified to pick a specific face.
     style: Regular
