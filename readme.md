@@ -300,7 +300,8 @@ sudo apt install screenfetch
 add screenfetch ~/.zshrc
 ### Configure Logitech MX Master 3 on Linux (LogiOps)
 <https://danishshakeel.me/configure-logitech-mx-master-3-on-linux-logiops/>
-
+https://volta.sh/
+https://www.codegrepper.com/code-examples/shell/set+the+default+shell+to+zsh+in+alacritty
 ## Development
 docker
 java
