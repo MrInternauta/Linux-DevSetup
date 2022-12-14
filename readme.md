@@ -314,3 +314,35 @@ volta
   gulp
   webpack
   nestjs
+
+
+## Configuraciones Android DEveloper
+```
+~/.bashrc  ~/.zshrc ~/.bash_profile
+____VARIABLES DE ENTORNO___
+export ANDROID_SDK_ROOT=$HOME/Users/feliperamirez/Library/Android/sdk
+```
+### avdmanager, sdkmanager
+```
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+export PATH=$PATH:$ANDROID_HOME/tools
+```
+### adb, logcat
+```
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+```
+### emulator
+```
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+```
+# JAVA
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home
+export PATH=$PATH:$JAVA_HOME/bin
+
+export PATH=$PATH:/Users/feliperamirez/gradle-7.1.1/bin
+#BREW (HOME BREW)
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
