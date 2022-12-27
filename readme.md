@@ -7,6 +7,7 @@
 ```bash
 # apt-get
 sudo apt-get install zsh
+sudo apt install curl
 ```
 
 type zsh
