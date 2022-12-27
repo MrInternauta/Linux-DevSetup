@@ -10,7 +10,7 @@ sudo apt-get install zsh
 sudo apt install curl
 ```
 
-type zsh
+type
 ```bash
 zsh
 ```
@@ -53,36 +53,6 @@ p10k configure
 - <https://github.com/zsh-users/zsh-autosuggestions> 
 - <https://github.com/zsh-users/zsh-syntax-highlighting>
 - <https://github.com/zsh-users/zsh-completions>
-- <https://github.com/rajasegar/alacritty-themes>
-- <https://gitmoji.dev/> 
-
-### ls tools
-
-- [color](https://github.com/athityakumar/colorls)
-- [exa](https://the.exa.website/)
-
-```bash
-sudo apt install ruby-full
-sudo gem install colorls
-
-```
-
-### secrets manager
-- [secman](https://github.com/scmn-dev/secman): Human-friendly and amazing secrets manager.
-
-```bash
-# via npm
-npm install -g secman
-
-# via script
-curl -fsSL https://cli.secman.dev | bash
-```
-### file transfer app
-- [tran](https://github.com/abdfnx/tran): Securely transfer and send anything between computers with TUI.
-
-```
-curl -sL https://cutt.ly/tran-cli | bash
-```
 
 ### Activate the plugins
 
@@ -92,15 +62,24 @@ In ~/.zshrc file replace the line starting with plugins=() to below line.
 plugins=( git zsh-syntax-highlighting zsh-autosuggestions )
 ```
 
-colors
+### ls tools
+- [color](https://github.com/athityakumar/colorls)
+- [exa](https://the.exa.website/)
+
+```bash
+sudo apt install ruby-full
+sudo gem install colorls
+
+```
+#### for colors
+Add to `~/.zshrc`
 ```bash
 if [ -x "$(command -v colorls)" ]; then
     alias ls="colorls"
     alias la="colorls -al"
 fi
 ```
-
-colors
+#### for exa
 ```exa
 if [ -x "$(command -v exa)" ]; then
     alias ls="exa"
@@ -108,202 +87,19 @@ if [ -x "$(command -v exa)" ]; then
 fi
 ```
 
-after all these steps type
-```bash
-source ~/.zshrc
-```
-
-### Alacrity
-
-<https://alacritty.org/> 
-
-```yml
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
-
-# Any items in the `env` entry below will be added as
-# environment variables. Some entries may override variables
-# set by alacritty itself.
-env:
-  # TERM variable
-  #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use `alacritty` if it is
-  # available, otherwise `xterm-256color` is used.
-  TERM: alacritty
-  LANG: "en_US.UTF-8"
-  LC_CTYPE: en_US.UTF-8
-window:
-  # Window background opacity
-  #
-  # Specified in floating number from `0.0` to `1.0`.
-  # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.9
-  # Window dimensions (changes require restart)
-  #
-  # Specified in number of columns/lines, not pixels.
-  # If both are `0`, this setting is ignored.
-  dimensions:
-    columns: 90
-    lines: 20
-  # Window position (changes require restart)
-  #
-  # Specified in number of pixels.
-  # If the position is not set, the window manager will handle the placement.
-  #position:
-  #  x: 0
-  #  y: 0
-  # Window padding (changes require restart)
-  #
-  # Blank space added around the window in pixels. This padding is scaled
-  # by DPI and the specified value is always added at both opposing sides.
-  padding:
-    x: 0
-    y: 0
-  # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: false
-  # Window decorations
-  #
-  # Values for `decorations`:
-  #     - full: Borders and title bar
-  #     - none: Neither borders nor title bar
-  #
-  # Values for `decorations` (macOS only):
-  #     - transparent: Title bar, transparent background and title bar buttons
-  #     - buttonless: Title bar, transparent background, but no title bar buttons
-  #decorations: full
-  # Startup Mode (changes require restart)
-  #
-  # Values for `startup_mode`:
-  #   - Windowed
-  #   - Maximized
-  #   - Fullscreen
-  #
-  # Values for `startup_mode` (macOS only):
-  #   - SimpleFullscreen
-  startup_mode: Windowed
-  # Window title
-  title: Alacritty
-  # Window class (Linux/BSD only):
-  #class:
-  # Application instance name
-  #instance: Alacritty
-  # General application class
-  #general: Alacritty
-  # GTK theme variant (Linux/BSD only)
-  #
-  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
-  # Set this to `None` to use the default theme variant.
-  #gtk_theme_variant: None
-  #scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
-  #history: 10000
-  # Number of lines the viewport will move for every line scrolled when
-  # scrollback is enabled (history > 0).
-  #multiplier: 3
-
-# Font configuration
-font:
-  # Normal (roman) font face
-  normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
-    family: "Cascadia Code PL" #"FiraCode Nerd Font" "Cascadia Code PL" Monaco  monospace
-
-    # The `style` can be specified to pick a specific face.
-    style: Regular
-    # Bold font face
-    #bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-    # The `style` can be specified to pick a specific face.
-    #style: Bold
-    # Italic font face
-    #italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-    # The `style` can be specified to pick a specific face.
-    #style: Italic
-    # Bold italic font face
-    #bold_italic:
-    # Font family
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-    # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
-
-  # Point size
-  size: 11.0
-  # Offset is the extra space around each character. `offset.y` can be thought of
-  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
-  #offset:
-  #  x: 0
-  #  y: 0
-  # Glyph offset determines the locations of the glyphs within their cells with
-  # the default being at the bottom. Increasing `x` moves the glyph to the right,
-  # increasing `y` moves the glyph upwards.
-  #glyph_offset:
-  #  x: 0
-  #  y: 0
-
-# If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
-# Colors (Tomorrow Night Bright)
-colors:
-  # Default colors
-  primary:
-    background: '#282c34'
-    foreground: '#abb2bf'
-
-  # Normal colors
-  normal:
-    # NOTE: Use '#131613' for the `black` color if you'd like to see
-    # black text on the background.
-    black: '#282c34'
-    red: '#e06c75'
-    green: '#98c379'
-    yellow: '#d19a66'
-    blue: '#61afef'
-    magenta: '#c678dd'
-    cyan: '#56b6c2'
-    white: '#abb2bf'
-
-  # Bright colors
-  bright:
-    black: '#5c6370'
-    red: '#e06c75'
-    green: '#98c379'
-    yellow: '#d19a66'
-    blue: '#61afef'
-    magenta: '#c678dd'
-    cyan: '#56b6c2'
-    white: '#ffffff'
-theme: One-Dark
-```
-## Utility
+### Utility
 Screenfetch
 ```bash
 sudo apt install screenfetch
 ```
-add screenfetch ~/.zshrc
-### Configure Logitech MX Master 3 on Linux (LogiOps)
-<https://danishshakeel.me/configure-logitech-mx-master-3-on-linux-logiops/>
+add screenfetch `~/.zshrc`
+
+## Alacrity
+<https://alacritty.org/> 
+
+## Development
 https://volta.sh/
 https://www.codegrepper.com/code-examples/shell/set+the+default+shell+to+zsh+in+alacritty
-## Development
 docker
 java
 volta
@@ -316,6 +112,25 @@ volta
   webpack
   nestjs
 
+### Install Volta | The Hassle-Free JavaScript Tool Manager
+```
+# install Volta
+curl https://get.volta.sh | bash
+
+# install Node
+volta install node
+
+# start using Node
+node
+```
+
+- <https://github.com/rajasegar/alacritty-themes>
+- <https://gitmoji.dev/> 
+
+
+
+### Configure Logitech MX Master 3 on Linux (LogiOps)
+<https://danishshakeel.me/configure-logitech-mx-master-3-on-linux-logiops/>
 
 ## Configuraciones Android DEveloper
 ```
@@ -336,7 +151,7 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 ```
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 ```
-# JAVA
+### JAVA
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home
 export PATH=$PATH:$JAVA_HOME/bin
 
@@ -346,4 +161,10 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+```
+
+## After all these steps type
+```bash
+source ~/.zshrc
 ```
