@@ -97,6 +97,45 @@ add screenfetch `~/.zshrc`
 ## Alacrity
 <https://alacritty.org/> 
 
+- Install the Rust compiler with rustup rustup.rs <https://rustup.rs>
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+- To make sure you have the right Rust compiler installed, run
+```bash
+rustup override set stable
+rustup update stable
+```
+- Dependencies: Debian/Ubuntu
+-  -If you'd like to build a local version manually, you need a few extra libraries to build Alacritty. Here's an apt command that should install all of them. If something is still found to be missing, please open an issue. 
+```bash
+sudo apt-get install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+```
+- Install with cargo
+```bash
+cargo install alacritty
+```
+- Post Build
+Terminfo: To make sure Alacritty works correctly, either the alacritty or alacritty-direct terminfo must be used. The alacritty terminfo will be picked up automatically if it is installed.
+If the following command returns without any errors, the alacritty terminfo is already installed:
+```bash
+infocmp alacritty
+```
+
+If it is not present already, you can install it globally with the following command:
+``` bash
+sudo tic -xe alacritty,alacritty-direct extra/alacritty.info
+```
+### Desktop Entry
+Many Linux and BSD distributions support desktop entries for adding applications to system menus. This will install the desktop entry for Alacritty:
+```
+sudo cp target/release/alacritty /usr/local/bin # or anywhere else in $PATH
+sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
+sudo desktop-file-install extra/linux/Alacritty.desktop
+sudo update-desktop-database
+```
+
 ## Development
 https://volta.sh/
 https://www.codegrepper.com/code-examples/shell/set+the+default+shell+to+zsh+in+alacritty
