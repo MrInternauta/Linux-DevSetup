@@ -181,19 +181,14 @@ sudo update-desktop-database
 ```
 npm i -g @ionic/cli
 ```
-### express
-### mongose
 ### gulp
 <https://gulpjs.com/docs/en/getting-started/quick-start/>
-
-### webpack
-<https://webpack.js.org/>
 ```
 npm install --global gulp-cli
 npm install --save-dev gulp
 ```
-
-
+### webpack
+<https://webpack.js.org/>
 ```bash
 Install with npm:
 npm install --save-dev webpack
