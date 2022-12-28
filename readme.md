@@ -184,11 +184,18 @@ npm i -g @ionic/cli
 ### express
 ### mongose
 ### gulp
+<https://gulpjs.com/docs/en/getting-started/quick-start/>
+
 ### webpack
 <https://webpack.js.org/>
+```
+npm install --global gulp-cli
+npm install --save-dev gulp
+```
+
+
 ```bash
 Install with npm:
-
 npm install --save-dev webpack
 Install with yarn:
 
