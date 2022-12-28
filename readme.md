@@ -116,6 +116,21 @@ sudo apt-get install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb
 ```bash
 cargo install alacritty
 ```
+
+- Clone
+```bash
+git clone https://github.com/alacritty/alacritty.git
+cd alacritty
+```
+- Build
+```bash
+# Force support for only Wayland
+cargo build --release --no-default-features --features=wayland
+
+# Force support for only X11
+cargo build --release --no-default-features --features=x11
+```
+
 - Post Build
 Terminfo: To make sure Alacritty works correctly, either the alacritty or alacritty-direct terminfo must be used. The alacritty terminfo will be picked up automatically if it is installed.
 If the following command returns without any errors, the alacritty terminfo is already installed:
