@@ -154,6 +154,7 @@ sudo update-desktop-database
 ## Development
 - https://volta.sh/
 - Set ZSH as default `chsh -s /bin/zsh` <https://www.codegrepper.com/code-examples/shell/set+the+default+shell+to+zsh+in+alacritty>
+- jdk and jre <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-es>
 - docker
 - angular
 - typescript
