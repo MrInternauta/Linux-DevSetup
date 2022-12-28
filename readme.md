@@ -152,19 +152,17 @@ sudo update-desktop-database
 ```
 
 ## Development
-https://volta.sh/
-https://www.codegrepper.com/code-examples/shell/set+the+default+shell+to+zsh+in+alacritty
-docker
-java
-volta
-  angular
-  typescript
-  ionic
-  express
-  mongose
-  gulp
-  webpack
-  nestjs
+- https://volta.sh/
+- Set ZSH as default `chsh -s /bin/zsh` <https://www.codegrepper.com/code-examples/shell/set+the+default+shell+to+zsh+in+alacritty>
+- docker
+- angular
+- typescript
+- ionic
+- express
+- mongose
+- gulp
+- webpack
+- nestjs
 
 ### Install Volta | The Hassle-Free JavaScript Tool Manager
 ```
