@@ -152,20 +152,56 @@ sudo update-desktop-database
 ```
 
 ## Development
-- https://volta.sh/
-- Set ZSH as default `chsh -s /bin/zsh` <https://www.codegrepper.com/code-examples/shell/set+the+default+shell+to+zsh+in+alacritty>
-- jdk and jre <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-es>
-- docker
-- angular
-- typescript
-- ionic
-- express
-- mongose
-- gulp
-- webpack
-- nestjs
+### Set ZSH as default `chsh -s /bin/zsh` <https://www.codegrepper.com/code-examples/shell/set+the+default+shell+to+zsh+in+alacritty>
+### Set JDK and JRE 
+    <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-es>
+    
+    ### docker
+        <https://www.docker.com/>
+    ### angular
+        <https://angular.io/cli>
+        ```bash
+        npm install -g @angular/cli
+        ```
+
+    ### typescript
+        <https://www.typescriptlang.org/docs/>
+        ```bash
+        #Dev
+        npm install typescript --save-dev
+        #Global
+        npm install typescript -g
+        #compile
+        npx tsc
+        ```
+    ### ionic
+    <https://ionicframework.com/>
+    ```
+    npm i -g @ionic/cli
+    ```
+    ### express
+    ### mongose
+    ### gulp
+    ### webpack
+    <https://webpack.js.org/>
+    ```bash
+    Install with npm:
+
+    npm install --save-dev webpack
+    Install with yarn:
+
+    yarn add webpack --dev
+
+    ```bash
+    ### Nestjs
+    <https://nestjs.com/>
+    ```
+    npm i -g @nestjs/cli
+    nest new project-name
+    ```
 
 ### Install Volta | The Hassle-Free JavaScript Tool Manager
+- https://volta.sh/
 ```
 # install Volta
 curl https://get.volta.sh | bash
