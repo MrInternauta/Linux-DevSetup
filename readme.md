@@ -262,6 +262,9 @@ source $(brew --prefix nvm)/nvm.sh
 ```
 ```
 
+### Gradle
+<https://gradle.org/install/>
+
 ## After all these steps type
 ```bash
 source ~/.zshrc
