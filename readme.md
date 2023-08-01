@@ -228,6 +228,10 @@ node
 ## Configuraciones Android DEveloper
 <https://developer.android.com/studio
 
+```
+sudo snap install android-studio --classic
+```
+
 Extract the tar.gz file to a folder on your computer. You can do this by clicking the Extract button in the upper-left corner of Archive Manager.
 Install the build-essential package on Ubuntu. You can do this in a terminal with the command sudo apt-get install build-essential. This
 <https://www.itprotoday.com/development-techniques-and-management/how-install-targz-file-ubuntu-linux >
