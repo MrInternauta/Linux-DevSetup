@@ -15,6 +15,20 @@ type
 zsh
 ```
 
+### set zsh as default
+Just using chsh:
+
+chsh -s $(which zsh)
+without sudo should work. If you use sudo it will change the shell not for your working user but for root
+
+Finally, log out of your computer and log back in.
+
+Troubleshooting:
+
+Do you have zsh installed (ii)? dpkg -l zsh
+Is your shell set to zsh? Last field of grep $USER /etc/passwd
+Is Zsh a valid login shell? grep zsh /etc/shells
+
 ### oh-my-zsh
 <https://ohmyz.sh/> 
 ```bash
