@@ -171,10 +171,6 @@ node
 ### gitmoji
 - <https://gitmoji.dev/> 
 
-
-
-### Set JDK and JRE 
-    <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-es>
     
 ### docker
     <https://www.docker.com/>
@@ -225,6 +221,14 @@ nest new project-name
 ### Configure Logitech MX Master 3 on Linux (LogiOps)
 <https://danishshakeel.me/configure-logitech-mx-master-3-on-linux-logiops/>
 
+
+
+### Set JDK, maven, gradle and JRE - SDKMNAN
+    <[https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-es](https://sdkman.io/install)>
+- sdk install java 23.ea.17-open
+- sdk install maven
+- sdk install gradle
+    
 ## Configuraciones Android DEveloper
 <https://developer.android.com/studio
 
@@ -253,21 +257,7 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 ```
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 ```
-### JAVA
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home
-export PATH=$PATH:$JAVA_HOME/bin
 
-export PATH=$PATH:/Users/feliperamirez/gradle-7.1.1/bin
-#BREW (HOME BREW)
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-```
-```
-
-### Gradle
-<https://gradle.org/install/>
 
 ## After all these steps type
 ```bash
