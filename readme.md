@@ -38,10 +38,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 ### Configure Powerlevel10k Theme
 
 Make sure your terminal font is FiraCode NF.
-font link: <https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Medium/complete/Fira%20Code%20Medium%20Nerd%20Font%20Complete.ttf>
-
-for windows users: <https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Medium/complete/Fira%20Code%20Medium%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf>
-
+<https://github.com/tonsky/FiraCode/releases>
 type
 
 ```bash
