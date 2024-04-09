@@ -14,20 +14,9 @@ type
 ```bash
 zsh
 ```
-
-### set zsh as default
-Just using chsh:
-
-chsh -s $(which zsh)
-without sudo should work. If you use sudo it will change the shell not for your working user but for root
-
-Finally, log out of your computer and log back in.
-
-Troubleshooting:
-
-Do you have zsh installed (ii)? dpkg -l zsh
-Is your shell set to zsh? Last field of grep $USER /etc/passwd
-Is Zsh a valid login shell? grep zsh /etc/shells
+### Set ZSH as default 
+-  <https://www.codegrepper.com/code-examples/shell/set+the+default+shell+to+zsh+in+alacritty>
+- `chsh -s /bin/zsh`
 
 ### oh-my-zsh
 <https://ohmyz.sh/> 
@@ -163,9 +152,11 @@ sudo update-desktop-database
 ```
 
 ## Development
-### Set ZSH as default 
--  <https://www.codegrepper.com/code-examples/shell/set+the+default+shell+to+zsh+in+alacritty>
-- `chsh -s /bin/zsh`
+
+
+### Volta
+<https://docs.volta.sh/guide/getting-started>
+
 ### Set JDK and JRE 
     <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-es>
     
