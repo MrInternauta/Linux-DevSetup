@@ -153,9 +153,25 @@ sudo update-desktop-database
 
 ## Development
 
+### Install Volta | The Hassle-Free JavaScript Tool Manager
+- https://volta.sh/
+```bash
+# install Volta
+curl https://get.volta.sh | bash
 
-### Volta
-<https://docs.volta.sh/guide/getting-started>
+# install Node
+volta install node
+
+# start using Node
+node
+```
+### 🌈 alacritty-themes 🍭
+- <https://github.com/rajasegar/alacritty-themes>
+
+### gitmoji
+- <https://gitmoji.dev/> 
+
+
 
 ### Set JDK and JRE 
     <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-es>
@@ -205,24 +221,6 @@ yarn add webpack --dev
 npm i -g @nestjs/cli
 nest new project-name
 ```
-
-### Install Volta | The Hassle-Free JavaScript Tool Manager
-- https://volta.sh/
-```bash
-# install Volta
-curl https://get.volta.sh | bash
-
-# install Node
-volta install node
-
-# start using Node
-node
-```
-
-- <https://github.com/rajasegar/alacritty-themes>
-- <https://gitmoji.dev/> 
-
-
 
 ### Configure Logitech MX Master 3 on Linux (LogiOps)
 <https://danishshakeel.me/configure-logitech-mx-master-3-on-linux-logiops/>
