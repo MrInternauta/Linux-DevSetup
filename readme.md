@@ -255,6 +255,13 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 ```
 
+### Generate ssh and connect Github
+
+```
+ ssh-keygen -t rsa -b 4096 -C "feldjesus@gmail.com"
+
+```
+
 
 ## After all these steps type
 ```bash
